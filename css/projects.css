@@ -1,0 +1,358 @@
+/* Стили для страницы проектов */
+
+/* Стили для героя */
+.projects-hero {
+    position: relative;
+    background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+    padding: 120px 0 80px;
+    color: white;
+    overflow: hidden;
+}
+
+.projects-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.projects-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.left-border, .right-border {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.left-border {
+    left: 50px;
+}
+
+.right-border {
+    right: 50px;
+}
+
+.hero-diagonal-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.diagonal-line {
+    position: absolute;
+    width: 200%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 50%;
+    left: -50%;
+    transform: rotate(var(--rotation)) translateY(-50%);
+}
+
+/* Стили для секции проектов */
+.projects-section {
+    padding: 80px 0;
+    background-color: #121212;
+    color: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4a6cf7, #2541b2);
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    position: relative;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(74, 108, 247, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.project-card:hover .card-glow {
+    opacity: 1;
+}
+
+.project-image {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.view-project-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4a6cf7;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-project-btn span {
+    margin-right: 8px;
+}
+
+.view-project-btn i {
+    transition: transform 0.3s ease;
+}
+
+.view-project-btn:hover {
+    background-color: #2541b2;
+    transform: translateY(-3px);
+}
+
+.view-project-btn:hover i {
+    transform: translateX(5px);
+}
+
+.project-content {
+    padding: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.project-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.project-divider {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a6cf7, #2541b2);
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.project-content p {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tags span {
+    background-color: rgba(74, 108, 247, 0.2);
+    color: #4a6cf7;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(74, 108, 247, 0.05) 0%, rgba(37, 65, 178, 0.05) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.project-card:hover .project-hover-overlay {
+    opacity: 1;
+}
+
+.no-projects {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.no-projects h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.no-projects p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.no-projects a {
+    color: #4a6cf7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.no-projects a:hover {
+    text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .projects-title {
+        font-size: 3rem;
+    }
+    
+    .projects-subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .left-border {
+        left: 30px;
+    }
+    
+    .right-border {
+        right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .projects-title {
+        font-size: 2.5rem;
+    }
+    
+    .projects-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .left-border, .right-border {
+        display: none;
+    }
+    
+    .projects-section {
+        padding: 60px 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects-hero {
+        padding: 80px 0 50px;
+    }
+    
+    .projects-title {
+        font-size: 2rem;
+    }
+    
+    .projects-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .projects-section {
+        padding: 40px 0;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+} 
