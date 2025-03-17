@@ -106,6 +106,10 @@ try {
                             endforeach; 
                             ?>
                         </div>
+                        <a href="project.php?id=<?php echo $project['id']; ?>" class="view-project-btn-mobile">
+                        <span>Подробнее</span>
+                        <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                     <div class="project-hover-overlay"></div>
                 </div>

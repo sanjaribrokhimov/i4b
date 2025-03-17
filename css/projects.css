@@ -284,6 +284,37 @@
 .no-projects a:hover {
     text-decoration: underline;
 }
+.view-project-btn-mobile {
+    display: none;
+    background-color: #4a6cf7;
+    color: white;
+    padding: 20px;
+    border-radius: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 5px;
+    margin-top: 20px;
+    width: 300px;
+    align-self: center;
+}
+.view-project-btn-mobile:hover {
+    background-color: #2541b2;
+    transform: translateY(-3px);
+}
+
+.view-project-btn-mobile:hover i {
+    transform: translateX(5px);
+}
+.view-project-btn-mobile span {
+    color: #fff;
+    font-size: 16px;
+    /* font-weight: 600; */
+    padding: 10px 20px;
+    border: 2px solid #b4ff46;
+    border-radius: 30px;
+    background: rgba(180, 255, 70, 0.2);
+    transition: all 0.3s ease;
+}
 
 /* Адаптивность */
 @media (max-width: 992px) {
@@ -328,6 +359,14 @@
     .projects-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 20px;
+    }
+    .view-project-btn {
+        display: none !important;
+    }
+    .view-project-btn-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
