@@ -1,0 +1,301 @@
+/* Pricing Section Styles */
+.pricing-section {
+    padding: 100px 0;
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(180, 255, 70, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(180, 255, 70, 0.1);
+    overflow: hidden;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(180, 255, 70, 0.1) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(180, 255, 70, 0.3);
+}
+
+.pricing-card:hover::before {
+    opacity: 1;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-header h3 {
+    color: var(--text-light);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: var(--accent-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.pricing-features {
+    margin-bottom: 30px;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-features li {
+    color: var(--text-secondary);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(180, 255, 70, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-features li::before {
+    content: '✓';
+    color: var(--accent-color);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.pricing-card .btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: var(--accent-color);
+    color: var(--bg-dark);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-card .btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(180, 255, 70, 0.3);
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid rgba(180, 255, 70, 0.1);
+}
+
+.contact-info p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: var(--bg-dark);
+    border-radius: 8px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(180, 255, 70, 0.1);
+}
+
+.contact-method:hover {
+    background: var(--accent-color);
+    color: var(--bg-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(180, 255, 70, 0.3);
+}
+
+.contact-method svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Styles for Pricing Section */
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-method {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+/* Hero Features Styles */
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    background: rgba(180, 255, 70, 0.1);
+    padding: 8px 15px;
+    border-radius: 30px;
+    border: 1px solid rgba(180, 255, 70, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-feature:hover {
+    background: rgba(180, 255, 70, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(180, 255, 70, 0.2);
+}
+
+.feature-icon {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.hero-feature span:not(.feature-icon) {
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .hero-features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-feature {
+        width: 100%;
+    }
+}
+
+.service-card.featured {
+    position: relative;
+    border: 1px solid rgba(180, 255, 70, 0.3);
+    background: linear-gradient(145deg, rgba(180, 255, 70, 0.05), rgba(0, 0, 0, 0.2));
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.service-card.featured:hover {
+    transform: scale(1.08);
+    border-color: rgba(180, 255, 70, 0.5);
+}
+
+.service-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: #b4ff46;
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(180, 255, 70, 0.3);
+}
+
+.service-cta {
+    display: inline-block;
+    background: #b4ff46;
+    color: #000;
+    padding: 8px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.service-cta:hover {
+    background: #c4ff66;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(180, 255, 70, 0.3);
+}
+
+@media (max-width: 768px) {
+    .service-card.featured {
+        transform: scale(1.02);
+    }
+    
+    .service-card.featured:hover {
+        transform: scale(1.05);
+    }
+    
+    .service-badge {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+} 

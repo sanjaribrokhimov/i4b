@@ -28,7 +28,30 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I4B AGENCY - Цифровые решения</title>
+    <title>Заказать разработку сайта, Telegram бота и мобильного приложения в Узбекистане | I4B AGENCY</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Заказать разработку сайта, Telegram бота и мобильного приложения в Узбекистане. Профессиональная разработка веб-сайтов, Telegram ботов и мобильных приложений в Ташкенте. Создание сайтов от 1,000,000 сум. Telegram боты от 500,000 сум. Мобильные приложения от 2,000,000 сум.">
+    <meta name="keywords" content="заказать сайт Узбекистан, разработка сайта Ташкент, заказать telegram бот, разработка telegram бота, заказать мобильное приложение, разработка мобильного приложения, создание сайта Узбекистан, разработка сайтов Ташкент, telegram боты Узбекистан, мобильные приложения Узбекистан">
+    <meta name="author" content="I4B AGENCY">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="UZ">
+    <meta name="geo.placename" content="Tashkent">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Заказать разработку сайта, Telegram бота и мобильного приложения в Узбекистане">
+    <meta property="og:description" content="Профессиональная разработка веб-сайтов, Telegram ботов и мобильных приложений в Ташкенте. Создание сайтов от 1,000,000 сум. Telegram боты от 500,000 сум. Мобильные приложения от 2,000,000 сум.">
+    <meta property="og:image" content="img/I4Blogo.png">
+    <meta property="og:url" content="https://i4b.uz">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://i4b.uz">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +109,22 @@ try {
                     </div>
                 </div>
                 <div class="hero-text">
-                    <h1><span>СОЗДАЕМ</span>ЦИФРОВЫЕ РЕШЕНИЯ</h1>
+                    <h1><span>ЗАКАЗАТЬ РАЗРАБОТКУ</span>САЙТА, TELEGRAM БОТА И МОБИЛЬНОГО ПРИЛОЖЕНИЯ</h1>
+                    <p class="hero-description">Профессиональная разработка в Узбекистане: сайты от 1,000,000 сум, Telegram боты от 500,000 сум, мобильные приложения от 2,000,000 сум</p>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Сайты для бизнеса</span>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Telegram боты</span>
+                        </div>
+                        <div class="hero-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Мобильные приложения</span>
+                        </div>
+                    </div>
                     <button class="order-btn">Заказать разработку</button>
                 </div>
             </div>
@@ -94,15 +132,15 @@ try {
                 <div class="stats-items">
                     <div class="stat-item">
                         <h2>4<span>+</span></h2>
-                        <p>лет на рынке</p>
+                        <p>лет на рынке Узбекистана</p>
                     </div>
                     <div class="stat-item">
                         <h2>13<span>+</span></h2>
-                        <p>реализованных проектов</p>
+                        <p>успешных проектов в Узбекистане</p>
                     </div>
                     <div class="stat-item">
                         <h2>15<span>+</span></h2>
-                        <p>технологий</p>
+                        <p>современных технологий</p>
                     </div>
                 </div>
             </div>
@@ -116,7 +154,8 @@ try {
             <div class="bg-shape shape-3"></div>
         </div>
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Наши проекты</h2>
+            <h2 class="section-title" data-aos="fade-up">Наши проекты в Узбекистане</h2>
+            <p class="section-description" data-aos="fade-up">Успешно реализованные IT-проекты для бизнеса в Узбекистане</p>
             <div class="projects-grid">
                 <?php 
                 $hasProjects = false;
@@ -259,10 +298,12 @@ try {
             <div class="bg-shape shape-3"></div>
         </div>
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Услуги</h2>
+            <h2 class="section-title" data-aos="fade-up">Заказать разработку сайта, Telegram бота и мобильного приложения в Узбекистане</h2>
+            <p class="section-description" data-aos="fade-up">Профессиональная разработка с гарантией качества и поддержкой</p>
             <div class="services-grid compact">
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="service-card featured" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card-glow"></div>
+                    <div class="service-badge">Популярная услуга</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#b4ff46" stroke-width="1.5">
                             <rect x="3" y="3" width="18" height="18" rx="2" />
@@ -271,14 +312,27 @@ try {
                             <line x1="10" y1="5.5" x2="10" y2="5.5" stroke-linecap="round" />
                         </svg>
                     </div>
-                    <h3>Разработка веб-сайтов</h3>
+                    <h3>Заказать разработку сайта в Узбекистане</h3>
                     <div class="service-divider"></div>
-                    <p>Создаем современные, адаптивные и высокопроизводительные веб-сайты для вашего бизнеса. От лендингов до сложных веб-приложений.</p>
+                    <p>Создаем современные, адаптивные и высокопроизводительные веб-сайты для вашего бизнеса в Узбекистане. От лендингов до сложных веб-приложений с учетом местного рынка.</p>
+                    <div class="service-price">
+                        <span>от 1,000,000 сум</span>
+                    </div>
+                    <div class="service-features">
+                        <ul>
+                            <li>Адаптивный дизайн</li>
+                            <li>SEO-оптимизация</li>
+                            <li>Интеграция с платежными системами</li>
+                            <li>Техническая поддержка</li>
+                        </ul>
+                    </div>
+                   
                     <div class="service-hover-overlay"></div>
                 </div>
                 
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="service-card featured" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card-glow"></div>
+                    <div class="service-badge">Популярная услуга</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#b4ff46" stroke-width="1.5">
                             <rect x="6" y="3" width="12" height="18" rx="2" />
@@ -286,9 +340,21 @@ try {
                             <rect x="18" y="12" width="3" height="3" stroke="#b4ff46" stroke-width="1" />
                         </svg>
                     </div>
-                    <h3>Мобильная разработка</h3>
+                    <h3>Заказать разработку мобильного приложения в Узбекистане</h3>
                     <div class="service-divider"></div>
-                    <p>Кроссплатформенная и нативная разработка под Android и iOS. Создаем мобильные приложения любой сложности.</p>
+                    <p>Кроссплатформенная и нативная разработка под Android и iOS для узбекского рынка. Создаем мобильные приложения любой сложности с учетом местных особенностей.</p>
+                    <div class="service-price">
+                        <span>от 2,000,000 сум</span>
+                    </div>
+                    <div class="service-features">
+                        <ul>
+                            <li>iOS и Android разработка</li>
+                            <li>Push-уведомления</li>
+                            <li>Интеграция с API</li>
+                            <li>Техническая поддержка</li>
+                        </ul>
+                    </div>
+                   
                     <div class="service-hover-overlay"></div>
                 </div>
                 
@@ -301,22 +367,46 @@ try {
                             <path d="M2 12L12 17L22 12" />
                         </svg>
                     </div>
-                    <h3>Автоматизация бизнеса</h3>
+                    <h3>Автоматизация бизнеса в Узбекистане</h3>
                     <div class="service-divider"></div>
-                    <p>Разрабатываем системы автоматизации бизнес-процессов, CRM, ERP и другие решения для повышения эффективности вашего бизнеса.</p>
+                    <p>Разрабатываем системы автоматизации бизнес-процессов, CRM, ERP и другие решения для повышения эффективности вашего бизнеса в Узбекистане с учетом местной специфики.</p>
+                    <div class="service-price">
+                        <span>от 3,000,000 сум</span>
+                    </div>
+                    <div class="service-features">
+                        <ul>
+                            <li>CRM системы</li>
+                            <li>ERP решения</li>
+                            <li>Автоматизация процессов</li>
+                            <li>Техническая поддержка</li>
+                        </ul>
+                    </div>
                     <div class="service-hover-overlay"></div>
                 </div>
                 
-                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="service-card featured" data-aos="zoom-in" data-aos-delay="400">
                     <div class="card-glow"></div>
+                    <div class="service-badge">Популярная услуга</div>
                     <div class="service-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="#b4ff46" stroke-width="1.5">
                             <path d="M8 12L11 15L16 9" />
                         </svg>
                     </div>
-                    <h3>Telegram боты</h3>
+                    <h3>Заказать разработку Telegram бота в Узбекистане</h3>
                     <div class="service-divider"></div>
-                    <p>Разрабатываем функциональных ботов для Telegram, которые автоматизируют коммуникацию с клиентами и оптимизируют бизнес-процессы.</p>
+                    <p>Разрабатываем функциональных ботов для Telegram, которые автоматизируют коммуникацию с клиентами и оптимизируют бизнес-процессы с учетом особенностей узбекского рынка.</p>
+                    <div class="service-price">
+                        <span>от 500,000 сум</span>
+                    </div>
+                    <div class="service-features">
+                        <ul>
+                            <li>Автоматизация ответов</li>
+                            <li>Интеграция с CRM</li>
+                            <li>Обработка платежей</li>
+                            <li>Техническая поддержка</li>
+                        </ul>
+                    </div>
+                    
                     <div class="service-hover-overlay"></div>
                 </div>
                 
@@ -329,9 +419,9 @@ try {
                             <path d="M2 12L12 17L22 12" />
                         </svg>
                     </div>
-                    <h3>AI-разработка</h3>
+                    <h3>AI-разработка в Узбекистане</h3>
                     <div class="service-divider"></div>
-                    <p>Создаем решения на базе искусственного интеллекта и машинного обучения для автоматизации и оптимизации бизнес-процессов.</p>
+                    <p>Создаем решения на базе искусственного интеллекта и машинного обучения для автоматизации и оптимизации бизнес-процессов в Узбекистане с учетом местных данных и требований.</p>
                     <div class="service-hover-overlay"></div>
                 </div>
                 
@@ -343,11 +433,10 @@ try {
                             <path d="M9 22V12H15V22" />
                         </svg>
                     </div>
-                    <h3>SEO оптимизация <br>
-                SMM продвижение</h3>
+                    <h3>SEO оптимизация и SMM продвижение в Узбекистане</h3>
                     <div class="service-divider"></div>
-                    <p>Повышаем видимость вашего сайта в поисковых системах,  с помощью комплексной SEO-оптимизации. <br>
-                    Развиваем ваш бренд в социальных сетях, создаем и управляем контентом, привлекаем новых клиентов.</p>
+                    <p>Повышаем видимость вашего сайта в поисковых системах Узбекистана с помощью комплексной SEO-оптимизации. <br>
+                    Развиваем ваш бренд в социальных сетях Узбекистана, создаем и управляем контентом, привлекаем новых клиентов с учетом местной аудитории.</p>
                     <div class="service-hover-overlay"></div>
                 </div>
                 
@@ -614,26 +703,20 @@ try {
                     <div class="member-photo">
                         <img src="img/sobit.jpg" alt="Станислав Карнахин">
                     </div>
-                    <h3>Станислав Карнахин</h3>
-                    <p class="member-position">HR директор</p>
+                    <h3>Рустамжонов Султан</h3>
+                    <p class="member-position">Гафик дизайнер</p>
                     <div class="member-divider"></div>
-                    <div class="member-contact">
-                        <p>+7 (987) 502-84-95</p>
-                        <p>job@codeinside.ru</p>
-                    </div>
+                    
                 </div>
                 
                 <div class="team-member">
                     <div class="member-photo">
-                        <img src="img/team/member6.jpg" alt="Анастасия Мадеева">
+                        <img src="img/sulton.jpg" alt="Анастасия Мадеева">
                     </div>
-                    <h3>Анастасия Мадеева</h3>
-                    <p class="member-position">Маркетинг и PR</p>
+                    <h3>Рустамжонов Султан</h3>
+                    <p class="member-position">Разработчик</p>
                     <div class="member-divider"></div>
-                    <div class="member-contact">
-                        <p>+7 (842) 45-84</p>
-                        <p>am@codeinside.ru</p>
-                    </div>
+                    
                 </div>
             </div>
             

@@ -5,10 +5,9 @@
                 <nav>
                     <ul>
                         <li><a href="index.php">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
                     <li><a href="#services-section">Услуги</a></li>
                     <li><a href="projects.php">Проекты</a></li>
-                    <li><a href="#">Блог</a></li>
+                    <!-- <li><a href="#">Блог</a></li> -->
                     <li><a href="contacts.php">Контакты</a></li>
                     </ul>
                 </nav>
