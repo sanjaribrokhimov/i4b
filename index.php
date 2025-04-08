@@ -703,7 +703,7 @@ try {
                     <div class="member-photo">
                         <img src="img/sobit.jpg" alt="Станислав Карнахин">
                     </div>
-                    <h3>Рустамжонов Султан</h3>
+                    <h3>Ибохимов Собит</h3>
                     <p class="member-position">Гафик дизайнер</p>
                     <div class="member-divider"></div>
                     
