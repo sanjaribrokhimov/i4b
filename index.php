@@ -160,7 +160,7 @@ try {
                 <?php 
                 $hasProjects = false;
                 if (isset($latestProjects)) {
-                    foreach ($latestProjects as $project): 
+                    while ($project = $latestProjects->fetchArray(SQLITE3_ASSOC)): 
                         $hasProjects = true;
                 ?>
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
@@ -192,7 +192,7 @@ try {
                     <div class="service-hover-overlay"></div>
                 </div>
                 <?php 
-                    endforeach;
+                    endwhile;
                 }
                 
                 // Если проектов нет или произошла ошибка, показываем статические карточки
