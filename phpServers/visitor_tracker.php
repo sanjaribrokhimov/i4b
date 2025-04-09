@@ -79,18 +79,6 @@ function sendTelegramNotification($visitorInfo) {
     return $response;
 }
 
-// Функция для сохранения информации о посетителе в базу данных или файл
-function saveVisitorInfo($visitorInfo) {
-    // Путь к файлу логов
-    $logFile = 'visitors_log.txt';
-    
-    // Форматируем данные для записи
-    $logData = json_encode($visitorInfo, JSON_UNESCAPED_UNICODE) . "\n";
-    
-    // Записываем в файл
-    file_put_contents($logFile, $logData, FILE_APPEND);
-}
-
 // Проверяем, не является ли посетитель ботом
 function isBot($userAgent) {
     $botKeywords = ['bot', 'crawler', 'spider', 'slurp', 'search', 'fetch', 'nutch'];
@@ -110,9 +98,6 @@ $visitorInfo = getVisitorInfo();
 
 // Проверяем, не является ли посетитель ботом
 if (!isBot($visitorInfo['user_agent'])) {
-    // Сохраняем информацию в лог
-    saveVisitorInfo($visitorInfo);
-    
     // Отправляем уведомление в Telegram
     // Используем сессию, чтобы не отправлять уведомление при каждом обновлении страницы
     if (session_status() == PHP_SESSION_NONE) {
