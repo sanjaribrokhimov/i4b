@@ -45,9 +45,9 @@ try {
                 
                 if (in_array($file_type, $allowed_types)) {
                     // Создаем директорию для загрузки, если она не существует
-                    $upload_dir = '../uploads/projects/';
+                    $upload_dir = __DIR__ . '/../uploads/projects/';
                     if (!file_exists($upload_dir)) {
-                        mkdir($upload_dir, 0777, true);
+                        mkdir($upload_dir, 0775, true);
                     }
                     
                     $file_name = time() . '_' . basename($_FILES['main_image']['name']);
@@ -56,7 +56,7 @@ try {
                     if (move_uploaded_file($_FILES['main_image']['tmp_name'], $target_file)) {
                         $main_image = 'uploads/projects/' . $file_name;
                     } else {
-                        $error = 'Ошибка при загрузке изображения';
+                        $error = 'Ошибка при загрузке изображения. Проверьте права доступа к директории ' . $upload_dir;
                     }
                 } else {
                     $error = 'Недопустимый тип файла. Разрешены только JPG, PNG, WebP и GIF';

@@ -160,7 +160,7 @@ try {
                 <?php 
                 $hasProjects = false;
                 if (isset($latestProjects)) {
-                    while ($project = $latestProjects->fetchArray(SQLITE3_ASSOC)): 
+                    foreach ($latestProjects as $project): 
                         $hasProjects = true;
                 ?>
                 <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
@@ -192,7 +192,7 @@ try {
                     <div class="service-hover-overlay"></div>
                 </div>
                 <?php 
-                    endwhile;
+                    endforeach;
                 }
                 
                 // Если проектов нет или произошла ошибка, показываем статические карточки
@@ -478,19 +478,19 @@ try {
                             <span>Vue.js</span>
                         </div>
                         <div class="tech-logo">
-                            <img src="img/laravel.png" alt="Laravel">
+                            <img src="img/Laravel.png" alt="Laravel">
                             <span>Laravel</span>
                         </div>
                         <div class="tech-logo">
-                            <img src="img/flutter.png" alt="Flutter">
+                            <img src="img/Flutter.png" alt="Flutter">
                             <span>Flutter</span>
                         </div>
                         <div class="tech-logo">
-                            <img src="img/react.png" alt="React">
+                            <img src="img/React.png" alt="React">
                             <span>React</span>
                         </div>
                         <div class="tech-logo">
-                            <img src="img/django.png" alt="Django">
+                            <img src="img/Django.png" alt="Django">
                             <span>Django</span>
                         </div>
                         <div class="tech-logo">
@@ -498,7 +498,7 @@ try {
                             <span>Golang</span>
                         </div>
                         <div class="tech-logo">
-                            <img src="img/java.png" alt="Java">
+                            <img src="img/Java.png" alt="Java">
                             <span>Java</span>
                         </div>
                     </div>
